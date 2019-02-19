@@ -11,7 +11,7 @@ $(document).ready(function(){
     var receiveMailDate ='25 février';
 
     if(dest=="d.lacroix@cfwb.be"){
-      if(object.toLowerCase().indexOf("découvrir le récit policier") >= 0){
+        if((object.toLowerCase().indexOf("découvrir le récit policier") >= 0)||(object.toLowerCase().indexOf("decouvrir le recit policier") >= 0)||(object.toLowerCase().indexOf("découvrir le recit policier") >= 0)||(object.toLowerCase().indexOf("decouvrir le récit policier") >= 0)){
         var newMail ='<tr class="newMail" data-read=0 data-toggle="modal" data-target="#bravoMailModal">'+
             '<td><i class="fas fa-envelope"></i> <i class="far fa-star"></i></td>'+
             '<td>'+receiveMailSend+'</td>'+
